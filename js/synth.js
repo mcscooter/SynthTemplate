@@ -107,6 +107,7 @@ function Voice( note, velocity ) {
 
 	// create oscillator
 	this.osc = audioContext.createOscillator();
+	this.osc.type = 1;
 	this.osc.frequency.setValueAtTime(this.originalFrequency, 0);
 
 	// create the volume envelope
